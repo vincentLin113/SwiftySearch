@@ -1,0 +1,7 @@
+platform :ios, '9.0'
+
+target 'SwiftySearchDemo' do
+  use_frameworks!
+
+  pod 'SwiftySearch', :path => '../SwiftySearch'
+end
