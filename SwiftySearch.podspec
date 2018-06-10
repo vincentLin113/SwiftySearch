@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "SwiftySearch"
-  s.version      = "1.0.3"
+  s.version      = "1.0.4"
   s.summary      = "Awesome iOS UISearchController with multi-feature."
   s.description  = "Search History + Hot Search + Customization + Localized SearchController"
   s.homepage     = "https://github.com/vincentLin113/SwiftySearch"
