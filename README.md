@@ -26,7 +26,7 @@ Awesome iOS UISearchController with multi-feature, base on [PYSearch](https://gi
 #### CocoaPods
 available on CocoaPods. Just add the following to your project Podfile:
 ```
-pod 'SKPhotoBrowser'
+pod 'SwiftySearch'
 use_frameworks!
 ```
 
@@ -59,11 +59,19 @@ Custom Text
 ```swift
             search.searchBarPlaceholder = "Avengers"
             search.cancelButtonText = "Close"
+            search.receiveSearchText = "Thor"
+            search.receiveHotSearchs = ["Eminem", "Macklemore", "Post Malone", "Jay Chou", "Sia", "Taylor Swift", "Kendrick Lamar"]
+            search.receiveTitle = "SwiftyTitle"
 ```
 
 Custom Image
 ```swift
            SwiftySearchCellCustom.cleanButtonIconImage = yourImage
+```
+
+Search History
+```swift
+           search.maxOfSearchRecords = 10
 ```
 
 Set hot search
