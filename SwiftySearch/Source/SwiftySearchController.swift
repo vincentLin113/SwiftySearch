@@ -295,7 +295,7 @@ open class SwiftySearchController: UIViewController {
             #if swift(>=4.0)
             navigation.titleTextAttributes = [NSAttributedStringKey.foregroundColor: self.navigationTitleColor]
             #else
-            navigation.titleTextAttributes = [NSFontAttributeName: self.navigationTitleColor]
+            navigation.titleTextAttributes = [NSForegroundColorAttributeName: self.navigationTitleColor]
             #endif
         }
         navigationItem.rightBarButtonItem = UIBarButtonItem(title: self.cancelButtonText, style: .done, target: self, action: #selector(doDismiss))
