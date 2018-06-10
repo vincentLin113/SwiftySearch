@@ -9,20 +9,15 @@
 Pod::Spec.new do |s|
 
   s.name         = "SwiftySearch"
-  s.version      = "1.0.1"
+  s.version      = "1.0.2"
   s.summary      = "Awesome iOS UISearchController with multi-feature."
-
-  s.description  = "Search History + Hot Search + Customization"
-
+  s.description  = "Search History + Hot Search + Customization + Localized SearchController"
   s.homepage     = "https://github.com/vincentLin113/SwiftySearch"
-  s.license      = { :type => "MIT"" }
-
-  s.author             = { "Vincent Lin" => "keepexcelsior@gmail.com" }
+  s.license      = "MIT"
+  s.author       = { "VincentLin" => "keepexcelsior@gmail.com" }
   s.platform     = :ios, "9.0"
-
   s.source       = { :git => "https://github.com/vincentLin113/SwiftySearch.git", :tag => "#{s.version}" }
-
-  s.source_files  = 'Source/**/*.{swift,metal,h,m}'
-  s.exclude_files = "Source/SwiftySearchResource.bundle", "Source/**/*.strings"
-  s.swift_version = '3'
+  s.source_files  = "SwiftySearch/Source/*.{swift,metal,h,m}"
+  s.resources     = "SwiftySearch/Source/SwiftySearchResource.bundle", "SwiftySearch/Source/**/*.strings"
+  s.swift_version = '3.3'
 end

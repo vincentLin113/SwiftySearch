@@ -292,7 +292,11 @@ open class SwiftySearchController: UIViewController {
     private func setupNavigation() {
         navigationItem.title = receiveTitle
         if let navigation = self.navigationController?.navigationBar {
+            #if swift(>=4.0)
             navigation.titleTextAttributes = [NSAttributedStringKey.foregroundColor: self.navigationTitleColor]
+            #else
+            navigation.titleTextAttributes = [NSFontAttributeName: self.navigationTitleColor]
+            #endif
         }
         navigationItem.rightBarButtonItem = UIBarButtonItem(title: self.cancelButtonText, style: .done, target: self, action: #selector(doDismiss))
         navigationItem.rightBarButtonItem?.tintColor = self.cancelTextColor
@@ -418,7 +422,7 @@ open class SwiftySearchController: UIViewController {
     /**
      關閉視窗
      */
-    @objc private func doDismiss() {
+    @objc fileprivate func doDismiss() {
         view.endEditing(true) ; // 先關鍵盤
         if mode == .showRecommendation {
             toggleMode(.multiPurpose)

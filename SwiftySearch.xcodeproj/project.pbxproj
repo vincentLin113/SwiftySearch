@@ -28,7 +28,6 @@
 		3419E36720CBD2F100BF9180 /* UIView+Anchors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3419E35620CBD2F100BF9180 /* UIView+Anchors.swift */; };
 		3419E36820CBD2F100BF9180 /* SwiftySearch+CAGradientLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3419E35720CBD2F100BF9180 /* SwiftySearch+CAGradientLayer.swift */; };
 		3419E37120CBD82900BF9180 /* LocalizeString.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3419E37320CBD82900BF9180 /* LocalizeString.strings */; };
-		3419E37720CBDA9500BF9180 /* SwiftySearchResource.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 3419E37620CBDA9500BF9180 /* SwiftySearchResource.bundle */; };
 		3419E37D20CBDB4B00BF9180 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3419E37C20CBDB4B00BF9180 /* Info.plist */; };
 /* End PBXBuildFile section */
 
@@ -67,7 +66,6 @@
 		3419E35720CBD2F100BF9180 /* SwiftySearch+CAGradientLayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SwiftySearch+CAGradientLayer.swift"; sourceTree = "<group>"; };
 		3419E37220CBD82900BF9180 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/LocalizeString.strings; sourceTree = "<group>"; };
 		3419E37420CBD83800BF9180 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/LocalizeString.strings"; sourceTree = "<group>"; };
-		3419E37620CBDA9500BF9180 /* SwiftySearchResource.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = SwiftySearchResource.bundle; path = SwiftySearch/SwiftySearchResource.bundle; sourceTree = SOURCE_ROOT; };
 		3419E37C20CBDB4B00BF9180 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -147,7 +145,6 @@
 				3419E34720CBD2F000BF9180 /* WithoutCancelSearchBar.swift */,
 				3419E34820CBD2F000BF9180 /* WithoutCancelSearchController.swift */,
 				3419E35320CBD2F100BF9180 /* HotSearchModel.swift */,
-				3419E37620CBDA9500BF9180 /* SwiftySearchResource.bundle */,
 				3419E37520CBD9C400BF9180 /* LocalizeGroup */,
 			);
 			path = Source;
@@ -254,7 +251,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				3419E37120CBD82900BF9180 /* LocalizeString.strings in Resources */,
-				3419E37720CBDA9500BF9180 /* SwiftySearchResource.bundle in Resources */,
 				3419E37D20CBDB4B00BF9180 /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
