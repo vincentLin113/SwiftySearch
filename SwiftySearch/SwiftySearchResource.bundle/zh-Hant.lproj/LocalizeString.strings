@@ -1,0 +1,14 @@
+/* 
+  Chinese.strings
+  SwiftySearch
+
+  Created by Vincent Lin on 2018/6/9.
+  Copyright © 2018 Vincent Lin. All rights reserved.
+*/
+
+"Search"            =  "搜尋" ;
+"SearchRecord"      =  "紀錄" ;
+"HotSearch"         =  "熱門" ;
+"EnterKeyword"      =  "輸入" ;
+"Close"             =  "關閉" ;
+"CleanAll"          =  "清除" ;
