@@ -143,6 +143,9 @@ open class SwiftySearchController: UIViewController {
     
     open var displayStatusBar: Bool = true
     
+    public var navigationLeftColor: UIColor = UIColor.Blue.mainBlue
+    
+    public var navigationRightColor: UIColor = UIColor.Blue.waterBlue
     
     /**
      推薦關鍵字, data type are [String], '預設值空字串陣列'
@@ -322,7 +325,7 @@ open class SwiftySearchController: UIViewController {
         if #available(iOS 11.0, *) {
             navigationItem.searchController = searchController
             navigationItem.hidesSearchBarWhenScrolling = false
-            let colors: [UIColor] = [UIColor.Blue.waterBlue, UIColor.Blue.mainBlue]
+            let colors: [UIColor] = [navigationLeftColor, navigationRightColor]
             if let naviBar = navigationController?.navigationBar {
                 if let gradientImage = CAGradientLayer(frame: naviBar.frame, colors: colors).creatGradientImage() {
                     naviBar.barTintColor = UIColor(patternImage: gradientImage)
@@ -340,6 +343,7 @@ open class SwiftySearchController: UIViewController {
             }
             
         } else {
+            searchController.searchBar.tintColor = navigationLeftColor
             navigationItem.titleView = searchController.searchBar
             if let searchBarFirstSubView = searchController.searchBar.subviews.first {
                 for subView in searchBarFirstSubView.subviews {

@@ -12,22 +12,31 @@
 		34F3352020CC9BC600A8EC49 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 34F3351E20CC9BC600A8EC49 /* Main.storyboard */; };
 		34F3352220CC9BC700A8EC49 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 34F3352120CC9BC700A8EC49 /* Assets.xcassets */; };
 		34F3352520CC9BC700A8EC49 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 34F3352320CC9BC700A8EC49 /* LaunchScreen.storyboard */; };
+		34F3358020CCD8A300A8EC49 /* SwiftySearch.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34F3357D20CCD88400A8EC49 /* SwiftySearch.framework */; };
+		34F3358120CCD8A300A8EC49 /* SwiftySearch.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 34F3357D20CCD88400A8EC49 /* SwiftySearch.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		34F3356B20CCC41500A8EC49 /* PBXContainerItemProxy */ = {
+		34F3357C20CCD88400A8EC49 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 34F3356620CCC41400A8EC49 /* SwiftySearch.xcodeproj */;
+			containerPortal = 34F3357720CCD88300A8EC49 /* SwiftySearch.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 3419E30A20CBD13200BF9180;
 			remoteInfo = SwiftySearch;
 		};
-		34F3356D20CCC41500A8EC49 /* PBXContainerItemProxy */ = {
+		34F3357E20CCD88400A8EC49 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 34F3356620CCC41400A8EC49 /* SwiftySearch.xcodeproj */;
+			containerPortal = 34F3357720CCD88300A8EC49 /* SwiftySearch.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 3419E31320CBD13200BF9180;
 			remoteInfo = SwiftySearchTests;
+		};
+		34F3358220CCD8A300A8EC49 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 34F3357720CCD88300A8EC49 /* SwiftySearch.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 3419E30920CBD13200BF9180;
+			remoteInfo = SwiftySearch;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -38,6 +47,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				34F3358120CCD8A300A8EC49 /* SwiftySearch.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -52,7 +62,7 @@
 		34F3352120CC9BC700A8EC49 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		34F3352420CC9BC700A8EC49 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		34F3352620CC9BC700A8EC49 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		34F3356620CCC41400A8EC49 /* SwiftySearch.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SwiftySearch.xcodeproj; path = ../SwiftySearch.xcodeproj; sourceTree = "<group>"; };
+		34F3357720CCD88300A8EC49 /* SwiftySearch.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SwiftySearch.xcodeproj; path = ../SwiftySearch.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +70,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				34F3358020CCD8A300A8EC49 /* SwiftySearch.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -69,7 +80,7 @@
 		34F3350E20CC9BC600A8EC49 = {
 			isa = PBXGroup;
 			children = (
-				34F3356620CCC41400A8EC49 /* SwiftySearch.xcodeproj */,
+				34F3357720CCD88300A8EC49 /* SwiftySearch.xcodeproj */,
 				34F3351920CC9BC600A8EC49 /* SwiftySearchDemo */,
 				34F3351820CC9BC600A8EC49 /* Products */,
 			);
@@ -96,11 +107,11 @@
 			path = SwiftySearchDemo;
 			sourceTree = "<group>";
 		};
-		34F3356720CCC41400A8EC49 /* Products */ = {
+		34F3357820CCD88300A8EC49 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				34F3356C20CCC41500A8EC49 /* SwiftySearch.framework */,
-				34F3356E20CCC41500A8EC49 /* SwiftySearchTests.xctest */,
+				34F3357D20CCD88400A8EC49 /* SwiftySearch.framework */,
+				34F3357F20CCD88400A8EC49 /* SwiftySearchTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -120,6 +131,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				34F3358320CCD8A300A8EC49 /* PBXTargetDependency */,
 			);
 			name = SwiftySearchDemo;
 			productName = SwiftySearchDemo;
@@ -154,8 +166,8 @@
 			projectDirPath = "";
 			projectReferences = (
 				{
-					ProductGroup = 34F3356720CCC41400A8EC49 /* Products */;
-					ProjectRef = 34F3356620CCC41400A8EC49 /* SwiftySearch.xcodeproj */;
+					ProductGroup = 34F3357820CCD88300A8EC49 /* Products */;
+					ProjectRef = 34F3357720CCD88300A8EC49 /* SwiftySearch.xcodeproj */;
 				},
 			);
 			projectRoot = "";
@@ -166,18 +178,18 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
-		34F3356C20CCC41500A8EC49 /* SwiftySearch.framework */ = {
+		34F3357D20CCD88400A8EC49 /* SwiftySearch.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
 			path = SwiftySearch.framework;
-			remoteRef = 34F3356B20CCC41500A8EC49 /* PBXContainerItemProxy */;
+			remoteRef = 34F3357C20CCD88400A8EC49 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		34F3356E20CCC41500A8EC49 /* SwiftySearchTests.xctest */ = {
+		34F3357F20CCD88400A8EC49 /* SwiftySearchTests.xctest */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.cfbundle;
 			path = SwiftySearchTests.xctest;
-			remoteRef = 34F3356D20CCC41500A8EC49 /* PBXContainerItemProxy */;
+			remoteRef = 34F3357E20CCD88400A8EC49 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
@@ -206,6 +218,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		34F3358320CCD8A300A8EC49 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SwiftySearch;
+			targetProxy = 34F3358220CCD8A300A8EC49 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		34F3351E20CC9BC600A8EC49 /* Main.storyboard */ = {

@@ -18,6 +18,10 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.title = "SwiftySearch"
+        if #available(iOS 11.0, *) {
+            self.navigationController?.navigationBar.prefersLargeTitles = true
+        }
         setupTableView()
     }
 
@@ -86,6 +90,8 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
             search.navigationTitleColor = .white
             hotSearchs = ["Hip hop", "Pop Music", "Rock", "Blues", "Funk"]
         case 1:
+            search.navigationLeftColor = #colorLiteral(red: 0.971321404, green: 0.3788147569, blue: 0.4026813209, alpha: 1)
+            search.navigationRightColor = #colorLiteral(red: 0.9889290929, green: 0.5814483166, blue: 0.5431884527, alpha: 1)
             search.cancelTextColor = .white
             search.searchBarPlaceholder = "Avengers"
             hotSearchs = ["Black Widow", "Iron Man", "Captain America", "Thor", "Hulk", "Black Panther", "Hawkeye"]
@@ -172,7 +178,7 @@ class DemoCell: UITableViewCell {
     override func layoutSubviews() {
         super.layoutSubviews()
         customImageView.frame = bounds
-        titleLabel.frame = CGRect(x: 15,
+        titleLabel.frame = CGRect(x: 22,
                                   y: 30,
                                   width: frame.width - 30,
                                   height: 35)
